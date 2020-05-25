@@ -128,6 +128,18 @@
           <td> {{ date | date: 'MMMM - dd':'': language }}</td>
         </tr>
 
+        <tr>
+          <td>{{ name }}</td>
+          <td>
+            name | password : {{ active }}
+            <br>
+            <button class="btn btn-outline-primary" (click) = "active = !active">
+              Activar/Desactivar
+            </button>
+          </td>
+          <td> {{ name | password : active }}</td>
+        </tr>
+
       </tbody>
     </table>
 
@@ -145,7 +157,20 @@
         </pre>
       </div>
     </div>
+  </div>
+</div>
 
-
+<h3> Dom Seguro</h3>
+<hr>
+<div class="row mb-5">
+  <div class="col">
+    <iframe 
+          width="560"
+          height="315" 
+          [src]="videoUrl | domSafe" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+    </iframe>
   </div>
 </div>

@@ -12,11 +12,15 @@ registerLocaleData( localeFr );
 
 import { AppComponent } from './app.component';
 import { MyPipePipe } from './pipes/my-pipe.pipe';
+import { DomSafePipe } from './pipes/dom-safe.pipe';
+import { PasswordPipe } from './pipes/password.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyPipePipe
+    MyPipePipe,
+    DomSafePipe,
+    PasswordPipe
   ],
   imports: [
     BrowserModule
