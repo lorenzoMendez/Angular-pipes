@@ -6,7 +6,7 @@ import { stringify } from 'querystring';
 })
 export class PasswordPipe implements PipeTransform {
 
-  transform(value: string, show: boolean ): string {
+  transform(value: string, show: boolean = true ): string {
     return show ? "*".repeat( value.length ) : value;
   }
 
