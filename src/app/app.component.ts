@@ -12,6 +12,13 @@ export class AppComponent {
   public PI: number = Math.PI;
   public percent: number = 0.525;
   public salary: number = 3343.35;
+  
+  public promiseValue = new Promise<string>( (resolve) => {
+    setTimeout(() => {
+      resolve( "Llego la data" );
+    }, 3500 );    
+  } );
+
   public heroe: Object = {
     name: 'Logan',
     age: 10,
