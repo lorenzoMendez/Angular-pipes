@@ -12,7 +12,8 @@ export class AppComponent {
   public PI: number = Math.PI;
   public percent: number = 0.525;
   public salary: number = 3343.35;
-  
+  public date: Date = new Date();
+  public language: string="es";
   public promiseValue = new Promise<string>( (resolve) => {
     setTimeout(() => {
       resolve( "Llego la data" );

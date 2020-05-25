@@ -77,7 +77,7 @@
 
         <tr>
           <td>{{ salary }}</td>
-          <td> currency: 'CAD':'aymbol':'.0-0' </td>
+          <td> currency: 'CAD':'symbol':'.0-0' </td>
           <td> {{ salary | currency: 'CAD':'symbol':'.0-0' }}</td>
         </tr>
 
@@ -85,6 +85,41 @@
           <td>{{ promiseValue }}</td>
           <td> async </td>
           <td> {{ promiseValue | async }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ date }}</td>
+          <td> date </td>
+          <td> {{ date | date }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ date }}</td>
+          <td> date:'medium' </td>
+          <td> {{ date | date: 'medium' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ date }}</td>
+          <td> date:'short' </td>
+          <td> {{ date | date: 'short' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ date }}</td>
+          <td> date:'MMMM - dd' </td>
+          <td> {{ date | date: 'MMMM - dd' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ date }}</td>
+          <td> date: 'MMMM - dd':'':'{{ language }}'
+            <br>
+            <button (click)="language='es'" class="mr-1 btn btn-primary">Español</button>
+            <button (click)="language='fr'" class="mr-1 btn btn-secondary">Francés</button>
+            <button (click)="language='en'" class="mr-1 btn btn-success">Inglés</button>
+          </td>
+          <td> {{ date | date: 'MMMM - dd':'': language }}</td>
         </tr>
 
       </tbody>
