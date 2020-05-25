@@ -45,6 +45,24 @@
           <td> {{ array | slice:3:8  }}</td>
         </tr>
 
+        <tr>
+          <td>{{ PI }}</td>
+          <td> number - Un entero sin decimal </td>
+          <td> {{ PI | number: '1.0-0'  }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ PI }}</td>
+          <td> number - 3 posiciones enteras </td>
+          <td> {{ PI | number: '3.0-0'  }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ PI }}</td>
+          <td> number - hasta con 2 decimales </td>
+          <td> {{ PI | number: '.0-2'  }}</td>
+        </tr>
+
       </tbody>
     </table>
 
