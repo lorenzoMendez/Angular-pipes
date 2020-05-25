@@ -47,26 +47,38 @@
 
         <tr>
           <td>{{ PI }}</td>
-          <td> number - Un entero sin decimal </td>
+          <td> number: '1.0-0' </td>
           <td> {{ PI | number: '1.0-0'  }}</td>
         </tr>
 
         <tr>
           <td>{{ PI }}</td>
-          <td> number - 3 posiciones enteras </td>
+          <td> number: '3.0-0' </td>
           <td> {{ PI | number: '3.0-0'  }}</td>
         </tr>
 
         <tr>
           <td>{{ PI }}</td>
-          <td> number - hasta con 2 decimales </td>
-          <td> {{ PI | number: '.0-2'  }}</td>
+          <td> number: '.0-2' </td>
+          <td> {{ PI | number: '.0-2' }}</td>
         </tr>
 
         <tr>
           <td>{{ percent }}</td>
-          <td> percent </td>
+          <td> percent:'2.2-2' </td>
           <td> {{ percent | percent:'2.2-2' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ salary }}</td>
+          <td> currency </td>
+          <td> {{ salary | currency }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ salary }}</td>
+          <td> currency: 'CAD':'aymbol':'.0-0' </td>
+          <td> {{ salary | currency: 'CAD':'symbol':'.0-0' }}</td>
         </tr>
 
       </tbody>
