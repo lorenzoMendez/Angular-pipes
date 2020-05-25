@@ -11,10 +11,12 @@ registerLocaleData( localeEs );
 registerLocaleData( localeFr );
 
 import { AppComponent } from './app.component';
+import { MyPipePipe } from './pipes/my-pipe.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyPipePipe
   ],
   imports: [
     BrowserModule
